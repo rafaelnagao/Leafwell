@@ -20,4 +20,4 @@ jobs:
           component: false
         env:
           CYPRESS_RECORD_KEY: 7eabe4e5-69f8-4e85-a206-19ce2b5a7577
-          GITHUB_TOKEN: ${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}
+          GITHUB_TOKEN: ${{ secrets.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 }}
