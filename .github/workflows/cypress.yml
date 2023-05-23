@@ -1,19 +1,17 @@
 name: Cypress Tests
-on: [push]
+
+on: push
+
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        containers: [1, 2]
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v5
         with:
+          build: npm run build
           start: npm start
-          wait-on: http://localhost:3000
-          record: true
-          parallel: true
