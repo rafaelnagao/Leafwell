@@ -4,7 +4,6 @@
   "description": "This test is an assessment for the website Leafwell. It has sensitive information about the dev environment, so it will be a private project.",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run",
     "cy:open": "cypress open",
     "start": "node index.js",
     "test": "cypress run",
