@@ -17,5 +17,3 @@ jobs:
           wait-on: http://localhost:3000
           record: true
           parallel: true
-        env:
-          CYPRESS_RECORD_KEY: 7eabe4e5-69f8-4e85-a206-19ce2b5a7577
