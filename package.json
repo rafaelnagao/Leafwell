@@ -2,13 +2,10 @@
   "name": "leafwell",
   "version": "1.0.0",
   "description": "This test is an assessment for the website Leafwell. It has sensitive information about the dev environment, so it will be a private project.",
-  "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "start": "node index.js",
     "test": "cypress run",
     "build": "webpack"
-
   },
   "repository": {
     "type": "git",
@@ -28,5 +25,8 @@
   "devDependencies": {
     "cypress": "^12.12.0",
     "cypress-iframe": "^1.0.1"
+  },
+  "dependencies": {
+    "create-index": "^2.6.0"
   }
 }
