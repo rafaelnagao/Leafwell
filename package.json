@@ -1,0 +1,30 @@
+{
+  "name": "leafwell",
+  "version": "1.0.0",
+  "description": "This test is an assessment for the website Leafwell. It has sensitive information about the dev environment, so it will be a private project.",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelnagao/Leafwell.git"
+  },
+  "keywords": [
+    "automation;",
+    "Leafwell;",
+    "test"
+  ],
+  "author": "Rafael Yoshio Nagao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelnagao/Leafwell/issues"
+  },
+  "homepage": "https://github.com/rafaelnagao/Leafwell#readme",
+  "devDependencies": {
+    "cypress": "^12.12.0",
+    "cypress-iframe": "^1.0.1"
+  }
+}
