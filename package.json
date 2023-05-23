@@ -6,7 +6,7 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "cypress run",
     "build": "webpack"
 
