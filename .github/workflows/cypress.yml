@@ -14,9 +14,10 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: npm start
-          wait-on: 'http://localhost:3000'
+          wait-on: http://localhost:3000
           record: true
           parallel: true
+          component: false
         env:
           CYPRESS_RECORD_KEY: 7eabe4e5-69f8-4e85-a206-19ce2b5a7577
           GITHUB_TOKEN: ${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}
