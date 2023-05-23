@@ -4,7 +4,7 @@
   "description": "This test is an assessment for the website Leafwell. It has sensitive information about the dev environment, so it will be a private project.",
   "scripts": {
     "cy:open": "cypress open",
-    "start": "live-server",
+    "start": "live-server --port=3030",
     "cy:run": "cypress run",
     "test": "start-server-and-test start http://localhost:3030 cy:run",
     "cy:build": "cypress run --headless",
