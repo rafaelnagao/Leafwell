@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p align="center">
   <a href="" rel="noopener">
  <img width=200px height=200px src="https://staging.medicalcard.io/assets/hippocratica-logo-8b28f312ba76af0be33f26017d0fab55e6bde69b713f9e18b513c52ff26361c0.svg" alt="Leafwell"></a>
@@ -108,7 +107,3 @@ Any questions, I am always available and open to suggestions and sharing new kno
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Thank you very much for reviewing this project!
 - Visit my [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafael-nagao-%F0%9F%8F%B3%EF%B8%8F%E2%80%8D%F0%9F%8C%88-22846019b)
-=======
-# Leafwell
-This test is an assessment for the website Leafwell, as there are sensitive data, I'm going to make it a private project only.
->>>>>>> origin/main
