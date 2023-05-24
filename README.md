@@ -15,7 +15,7 @@
 
 ---
 
-<p align="center"> This test is an assessment for the website Leafwell. As there are sensitive data, I'm going to make it a private project only. 🚀
+<p align="center"> This test is an assessment for the website Leafwell. I've put everything in this project, hope you like it! 🚀
     <br> 
 </p>
 
