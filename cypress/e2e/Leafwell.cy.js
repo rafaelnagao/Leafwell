@@ -6,7 +6,10 @@ describe('Leafwell Website', () => {
   });
 
   it('Create account and password', () => {
-    cy.visit('https://staging.medicalcard.io/patient_registry/26d3a255-60a1-45c9-b4e8-047c3d5866c0/1');
+    const dynamicPart = "26d3a255-60a1-45c9-b4e8-047c3d5866c0";
+    const url = `https://staging.medicalcard.io/patient_registry/${dynamicPart}/1`;
+    cy.visit(url);
+
     cy.get('#patient_registry_state_code').select('ca');
     cy.get('#patient_registry_email')
       .clear()
@@ -36,7 +39,10 @@ describe('Leafwell Website', () => {
   });
 
   it('Fill General Information', () => {
-    cy.visit('https://staging.medicalcard.io/ca/patient_registry/80fad4e8-4242-47d3-8fce-9959bb57e444/3');
+    const dynamicPart = "80fad4e8-4242-47d3-8fce-9959bb57e444";
+    const url = `https://staging.medicalcard.io/ca/patient_registry/${dynamicPart}/3`;
+    cy.visit(url);
+
     cy.get('#patient_registry_first_name').clear().type('John');
     cy.get('#patient_registry_last_name').clear().type('Doe');
     cy.get(':nth-child(2) > .c-form__radio > :nth-child(2) > .c-form__label').click();
@@ -54,7 +60,10 @@ describe('Leafwell Website', () => {
   });
 
   it('Fill Medical Information', () => {
-    cy.visit('https://staging.medicalcard.io/ca/patient_registry/80fad4e8-4242-47d3-8fce-9959bb57e444/4');
+    const dynamicPart = "80fad4e8-4242-47d3-8fce-9959bb57e444";
+    const url = `https://staging.medicalcard.io/ca/patient_registry/${dynamicPart}/4`;
+    cy.visit(url);
+
     cy.get('.renewal > .js-form-field > :nth-child(3) > .c-form__label').should('not.have.class', 'selected');
     cy.get('.renewal > .js-form-field > :nth-child(3) > .c-form__label').click();
     
@@ -64,8 +73,8 @@ describe('Leafwell Website', () => {
     cy.get('[data-other-manual-input-toggler-container=""] > :nth-child(4) > .c-form__label').should('not.have.class', 'selected');
     cy.get('[data-other-manual-input-toggler-container=""] > :nth-child(4) > .c-form__label').click();
     
-    cy.get(':nth-child(5) > .c-form__label').should('not.have.class', 'selected');
-    cy.get(':nth-child(5) > .c-form__label').click();
+    cy.get('[data-other-manual-input-toggler-container=""] > :nth-child(5) > .c-form__label').should('not.have.class', 'selected');
+    cy.get('[data-other-manual-input-toggler-container=""] > :nth-child(5) > .c-form__label').click();
     
     cy.get(':nth-child(6) > .c-form__label').should('not.have.class', 'selected');
     cy.get(':nth-child(6) > .c-form__label').click();
@@ -83,7 +92,10 @@ describe('Leafwell Website', () => {
   });
 
   it('Upload ID', () => {
-    cy.visit('https://staging.medicalcard.io/ca/patient_registry/80fad4e8-4242-47d3-8fce-9959bb57e444/5');
+    const dynamicPart = "80fad4e8-4242-47d3-8fce-9959bb57e444";
+    const url = `https://staging.medicalcard.io/ca/patient_registry/${dynamicPart}/5`;
+    cy.visit(url);
+
     cy.get('.o-fileupload--upload_name').then((uploadName) => {
       if (uploadName.length === 0) {
         cy.fixture('IMG_1922.jpg', 'base64').then((fileContent) => {
@@ -116,7 +128,10 @@ describe('Leafwell Website', () => {
   });
 
   it('Select Plan', () => {
-    cy.visit('https://staging.medicalcard.io/ca/patient_registry/80fad4e8-4242-47d3-8fce-9959bb57e444/6')
+    const dynamicPart = "80fad4e8-4242-47d3-8fce-9959bb57e444";
+    const url = `https://staging.medicalcard.io/ca/patient_registry/${dynamicPart}/6`;
+    cy.visit(url);
+
     cy.get('.plan-88 > .c-plan > .c-plan__footer > .js-plan-trigger').click();
     cy.get('.js-summary-update').click();
     cy.get('.form-step-payment > .c-progress > .o-list-inline > .c-progress__item--current > .c-progress__label')

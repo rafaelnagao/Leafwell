@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This test is an assessment for the website Leafwell. It has sensitive information about the dev environment, so it will be a private project.",
   "scripts": {
+    "cypress": "cypress",
     "cy:open": "cypress open",
     "start": "node_modules/.bin/live-server --port=3030",
     "cy:run": "cypress run",
