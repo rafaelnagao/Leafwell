@@ -22,7 +22,7 @@
 ## 📝 Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Built Using](#built_using)
+- [Break Down](#break_down)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
@@ -82,7 +82,7 @@ or
 npx cypress run
 ```
 
-### Break down into end to end tests
+### Break down into end to end tests <a name = "break_down"></a>
 This test only tests the basic and critical functionality in creating a new user. The data used is false, only my email is true. 😎
 
 To speed things up and not take too much time, I didn't do negative tests, only positive ones. ➕
